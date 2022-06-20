@@ -1,13 +1,31 @@
-# Funciones Integradas
+# Funciones sin retorno de valor
 
-n = int(10)
-n = float(10)
-n = str(10)
-n = bin(10) # binario
-n = hex(10) # hexagecimal
-n = abs(-9) # absoluto
-n = round(6.8) 
-n = len('juanka')
+def saludar():
+    print("Hola amigo")
 
-# print(type(n))
-print(n)
+
+saludar()
+
+
+def saludar2(nombre):
+    print(f"Hola {nombre}")
+
+
+saludar2("juanka")
+
+
+def tabla_multiplicar(num):
+    for i in range(1, 11):
+        print(f"{num} x {i} = {num * i}")
+
+
+tabla_multiplicar(5)
+
+
+# Funciones con retorno de valor
+
+def multiplicar(num1, num2):
+    mult = num1*num2
+    return mult
+
+print(multiplicar(5,3))
